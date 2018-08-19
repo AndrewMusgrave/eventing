@@ -2,6 +2,12 @@
 
 A lightweight, minimal (~.650kb) JavaScript events library mimicking jquery. But Eventing well let you keep your blazing fast loading speeds.
 
+## TODO
+
+- Fix pack imports
+- Add tests
+- Improve docs
+
 ## Installation
 
 Use `npm` or `yarn`.
@@ -17,7 +23,7 @@ npm i -s eventing
 Usage by CDN
 
 ```
-unpkg.com/eventing@0.1.0/eventing.js
+https://unpkg.com/eventing@0.1.0/lib/eventing.js
 ```
 
 ## Api
