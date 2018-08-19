@@ -1,0 +1,9 @@
+{
+  "extends": "plugin:shopify/esnext",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "babel/no-invalid-this": "off"
+  }
+}

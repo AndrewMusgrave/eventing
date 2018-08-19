@@ -1,0 +1,34 @@
+{
+  "name": "eventing",
+  "version": "0.1.0",
+  "description": "A miniature event library",
+  "homepage": "https://github.com/AndrewMusgrave/eventing",
+  "repository": "https://github.com/AndrewMusgrave/eventing",
+  "author": {
+    "name": "Andrew Musgrave",
+    "email": "andrewdmusgrave@gmail.com",
+    "url": "https://github.com/AndrewMusgrave"
+  },
+  "main": "lib/eventing.js",
+  "files": [
+    "lib"
+  ],
+  "module": "lib/eventing.m.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-plugin-shopify": "^23.1.0",
+    "in-publish": "^2.0.0",
+    "microbundle": "^0.6.0",
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "lint": "eslint ./src/**/*.js --max-warnings 0 --format codeframe",
+    "format": "yarn run lint --fix",
+    "check": "npm-run-all lint",
+    "prepublish": "in-publish && yarn run build || :"
+  },
+  "source": "src"
+}
